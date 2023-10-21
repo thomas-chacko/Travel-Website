@@ -1,0 +1,132 @@
+body {
+  scroll-behavior: smooth;
+}
+.bgimg img {
+  width: 100%;
+  height: 85vh;
+  object-position: 0% 5%;
+  object-fit: cover;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .bgimg img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: 50% 0%;
+  }
+}
+.contents {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+}
+@media (max-width: 767px) {
+  .contents {
+    top: 45%;
+  }
+}
+.contents h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  font-family: "IBM Plex Sans", sans-serif;
+  animation: slideTop 1.5s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .contents h1 {
+    font-size: 30px;
+    max-width: 235px;
+  }
+}
+.contents button {
+  padding: 10px 20px;
+  letter-spacing: 3px;
+  background-color: #f6be00;
+  color: white;
+  margin-top: 14px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  transition: 0.7s;
+  font-family: "IBM Plex Sans", sans-serif;
+  animation: slideLeft 1.5s ease forwards;
+  animation-delay: 1s;
+}
+
+@media (max-width: 767px) {
+  .contents button {
+    display: none;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.about-image {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+@media (max-width: 767px) {
+  .about-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+.about-container p {
+  line-height: 30px;
+}
+.des-img {
+  transition: 1s;
+}
+.des-img:hover {
+  transform: scale(1.1);
+}
+.contact-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: 0% 100%;
+}
+.contact-container {
+  position: relative;
+}
+.contact-form {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.blog-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* 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 */
